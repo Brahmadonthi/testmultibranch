@@ -10,15 +10,22 @@ pipeline {
 
   stages {
 
-    stage('Hello') {
+    stage('stage-1') {
 
       steps {
 
         sh '''
+      echo "This is stage-1"
 
-          java -version
-          echo "brahma"
+        '''
 
+      }
+      stage('stage-2') {
+
+      steps {
+
+        sh '''
+        echo "This is stage 2"
         '''
 
       }
