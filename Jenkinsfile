@@ -28,11 +28,6 @@ pipeline {
         sh '''
         echo "This is stage 2"
         '''
-        stages {
-            input {
-                message "Hello Biswajit"
-                ok "Yes"
-                submitter "Brahma"
             }
         }
     }
